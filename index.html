@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusEmergency | Priyadarshini College</title>
+  <meta name="theme-color" content="#08152d">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="topbar">
+    <span>● CAMPUS SAFETY & SUPPORT</span>
+    <span id="liveClock">Your campus, your safety</span>
+  </div>
+
+  <header class="navbar">
+    <a class="brand" href="#home">
+      <div class="brand-logo">CE</div>
+      <div>
+        <strong>CampusEmergency</strong>
+        <small>PRIYADARSHINI COLLEGE OF ENGINEERING</small>
+      </div>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    <nav id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#report">Report Issue</a>
+      <a href="#track">Track Complaint</a>
+      <button class="btn btn-outline nav-login" id="loginOpen">Sign In</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal">
+        <span class="eyebrow"><span class="pulse-dot"></span> YOUR SAFETY MATTERS</span>
+        <h1>A Safer Campus.<br><span> A Stronger Community.</span></h1>
+        <p>One platform to report campus issues, request assistance and keep our college community informed.</p>
+        <div class="hero-actions">
+          <a class="btn btn-red" href="#report">Report an Issue ↗</a>
+          <a class="btn btn-glass" href="#services">Explore Services ↓</a>
+        </div>
+        <div class="hero-note">⚡ Quick reporting · Easy tracking · Campus support</div>
+      </div>
+      <div class="hero-badge reveal">
+        <div class="shield">✓</div>
+        <div><strong>Safety First</strong><small>Every concern matters</small></div>
+      </div>
+    </section>
+
+    <section class="college-strip">
+      <div class="college-mark">PCE</div>
+      <div>
+        <strong>PRIYADARSHINI COLLEGE OF ENGINEERING</strong>
+        <p>CampusEmergency — A Student Safety Initiative</p>
+      </div>
+      <span class="strip-status"><i></i> Digital Campus Support</span>
+    </section>
+
+    <section class="stats section-wrap reveal">
+      <div class="stat-card"><span class="stat-icon">📋</span><div><strong id="totalCount">0</strong><small>Total Reports</small></div></div>
+      <div class="stat-card"><span class="stat-icon">⏳</span><div><strong id="pendingCount">0</strong><small>Pending Reports</small></div></div>
+      <div class="stat-card"><span class="stat-icon">✓</span><div><strong id="resolvedCount">0</strong><small>Resolved Reports</small></div></div>
+      <div class="stat-card"><span class="stat-icon">🛡️</span><div><strong>24/7</strong><small>Safety Awareness</small></div></div>
+    </section>
+
+    <section class="section-wrap section-space" id="services">
+      <div class="section-heading reveal">
+        <span class="eyebrow dark-eyebrow">WHAT WE OFFER</span>
+        <h2>Campus Support <span>Services</span></h2>
+        <p>Report common campus problems through one simple platform.</p>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card reveal">
+          <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=700&q=80" alt="Waste management">
+          <div class="service-body"><span class="service-icon">♻️</span><h3>Cleanliness & Waste</h3><p>Report overflowing bins, litter and sanitation concerns.</p><button class="text-link" data-category="Cleanliness">Report issue →</button></div>
+        </article>
+        <article class="service-card reveal">
+          <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=700&q=80" alt="Road and infrastructure">
+          <div class="service-body"><span class="service-icon">🚧</span><h3>Road & Infrastructure</h3><p>Report damaged pathways and campus infrastructure issues.</p><button class="text-link" data-category="Infrastructure">Report issue →</button></div>
+        </article>
+        <article class="service-card reveal">
+          <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?auto=format&fit=crop&w=700&q=80" alt="Clean water">
+          <div class="service-body"><span class="service-icon">💧</span><h3>Water Supply</h3><p>Report water leakage, supply problems or faulty taps.</p><button class="text-link" data-category="Water Supply">Report issue →</button></div>
+        </article>
+        <article class="service-card reveal">
+          <img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=700&q=80" alt="Outdoor lights at night">
+          <div class="service-body"><span class="service-icon">💡</span><h3>Lighting & Electricity</h3><p>Report broken lights and electrical maintenance concerns.</p><button class="text-link" data-category="Electricity">Report issue →</button></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="emergency-section">
+      <div class="emergency-inner reveal">
+        <div>
+          <span class="eyebrow">NEED IMMEDIATE ASSISTANCE?</span>
+          <h2>Don't ignore a safety concern.</h2>
+          <p>Record an urgent campus alert so it appears in the local dashboard. For immediate danger, contact campus security or the appropriate emergency service directly.</p>
+        </div>
+        <button class="btn btn-red emergency-button" id="emergencyBtn">⚠ Record Emergency Alert</button>
+      </div>
+    </section>
+
+    <section class="section-wrap section-space" id="report">
+      <div class="section-heading reveal">
+        <span class="eyebrow dark-eyebrow">WE'RE HERE TO HELP</span>
+        <h2>Report a <span>Campus Issue</span></h2>
+        <p>Share the details so the concern can be reviewed.</p>
+      </div>
+      <div class="form-layout">
+        <form id="complaintForm" class="panel-form reveal">
+          <h3>Complaint Details</h3>
+          <p class="form-subtitle">Fields marked * are required.</p>
+          <label for="studentName">Full Name *</label>
+          <input id="studentName" name="studentName" required placeholder="Enter your full name">
+          <div class="two-cols">
+            <div><label for="studentId">Student ID / Roll No.</label><input id="studentId" placeholder="e.g. 0246"></div>
+            <div><label for="userRole">Your Role *</label><select id="userRole" required><option value="Student">Student</option><option value="Teacher">Teacher</option><option value="Staff">Staff</option></select></div>
+          </div>
+          <label for="category">Issue Category *</label>
+          <select id="category" required>
+            <option value="">Select a category</option>
+            <option>Cleanliness</option><option>Infrastructure</option><option>Water Supply</option><option>Electricity</option><option>Safety Concern</option><option>Other</option>
+          </select>
+          <label for="location">Campus Location *</label>
+          <input id="location" required placeholder="e.g. Block A, Room 204">
+          <label for="description">Describe the Issue *</label>
+          <textarea id="description" rows="4" required minlength="8" placeholder="Explain the problem clearly..."></textarea>
+          <button class="btn btn-primary full-btn" type="submit">Submit Complaint ↗</button>
+          <p class="privacy-note">Demo version: information is stored only in this browser.</p>
+        </form>
+
+        <aside class="side-panel reveal">
+          <div class="side-icon">🛡️</div>
+          <h3>Your voice can improve campus life.</h3>
+          <p>Provide accurate details so the responsible team can understand the issue.</p>
+          <div class="side-step"><b>01</b><span><strong>Submit</strong><small>Describe the problem and location.</small></span></div>
+          <div class="side-step"><b>02</b><span><strong>Track</strong><small>Save your complaint ID.</small></span></div>
+          <div class="side-step"><b>03</b><span><strong>Resolve</strong><small>Check status updates on this device.</small></span></div>
+          <div class="safety-note">🔒 Never include passwords or sensitive personal information in a complaint.</div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="tracking-section" id="track">
+      <div class="section-wrap section-space">
+        <div class="section-heading reveal">
+          <span class="eyebrow dark-eyebrow">STAY INFORMED</span>
+          <h2>Track Your <span>Complaint</span></h2>
+          <p>Enter the complaint ID you received after submitting a report.</p>
+        </div>
+        <form id="trackForm" class="track-box reveal">
+          <input id="trackId" required placeholder="e.g. CE-123456">
+          <button class="btn btn-primary" type="submit">Track Status →</button>
+        </form>
+        <div id="trackResult" class="track-result" aria-live="polite"></div>
+        <div class="dashboard panel reveal">
+          <div class="dashboard-head"><div><h3>Recent Campus Reports</h3><p>Reports saved on this device</p></div><button class="btn btn-outline" id="refreshBtn">↻ Refresh</button></div>
+          <div id="complaintList" class="complaint-list"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section section-wrap section-space" id="about">
+      <div class="about-image reveal"><img src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1000&q=85" alt="University campus building"><div class="image-label">LEARN · CONNECT · STAY SAFE</div></div>
+      <div class="about-copy reveal"><span class="eyebrow dark-eyebrow">ABOUT THE PROJECT</span><h2>Technology for a <span>Safer Campus</span></h2><p>CampusEmergency is a student project concept designed to make campus issue reporting easier. It brings complaint submission, basic status tracking and emergency alert recording into one interface.</p><p><strong>Institution:</strong> Priyadarshini College of Engineering</p><p><strong>Purpose:</strong> Improve awareness, reporting and communication around campus concerns.</p><a href="#report" class="btn btn-primary">Get Started →</a></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand footer-brand" href="#home"><div class="brand-logo">CE</div><div><strong>CampusEmergency</strong><small>PRIYADARSHINI COLLEGE OF ENGINEERING</small></div></a>
+    <p>A campus safety awareness project. This demo is not connected to college security services.</p>
+    <div class="footer-bottom"><span>© <span id="year"></span> CampusEmergency</span><a href="#home">Back to top ↑</a></div>
+  </footer>
+
+  <div class="modal" id="loginModal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close" id="loginClose" aria-label="Close">×</button>
+      <div class="brand-logo modal-logo">CE</div>
+      <h2>Welcome to CampusEmergency</h2>
+      <p>Choose a demo role to view the interface.</p>
+      <form id="loginForm">
+        <label for="loginName">Your Name</label><input id="loginName" required placeholder="Enter your name">
+        <label for="loginRole">Demo Role</label><select id="loginRole"><option value="Student">Student</option><option value="Teacher">Teacher / Admin</option></select>
+        <button class="btn btn-primary full-btn" type="submit">Continue →</button>
+      </form>
+      <p class="privacy-note">Demo sign-in only. No password or real account is required.</p>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
